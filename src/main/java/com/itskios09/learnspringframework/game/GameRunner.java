@@ -1,13 +1,15 @@
 package com.itskios09.learnspringframework.game;
 
 public class GameRunner {
-    MarioGame game;
-
-    public GameRunner (MarioGame game){
+    private GamingConsole game;
+    public GameRunner (GamingConsole game ){
         this.game = game;
     }
+    public void running_game(String x){
+        System.out.println("Runnng game: " + x );
+    }
     public void run(){
-        System.out.println("Runnng game: " + game );
+        running_game(game.toString());
         game.up();
         game.down();
         game.left();

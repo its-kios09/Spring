@@ -1,16 +1,16 @@
 package com.itskios09.learnspringframework.game;
 
-public class MarioGame {
+public class MarioGame implements GamingConsole{
     public void up(){
-        System.out.println("Jump");
+        System.out.println("Mario_Jump");
     }
     public void down(){
-        System.out.println("Get into a hole");
+        System.out.println("Mario_Get into a hole");
     }
     public void left(){
-        System.out.println("Go back");
+        System.out.println("Mario_Go back");
     }
     public void right(){
-        System.out.println("Run fast");
+        System.out.println("Mario_Run fast");
     }
 }
